@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="bg-dark">
+    <!--
+        col
+        sm
+        md
+        lg
+        xl
+        <div class="col-sm-3">ikram</div>
+        <div class="col-4 col-sm-4 col-md-2">ikram</div>
+    -->
+    <h1 class="text-primary">ikram</h1> <!-- primary:blue ;dark; success;danger;secondary;dark;info;warning;light-->
+    <div class="container">
+    <div class="row align-items-center" style="height: 200px; background-color: blue;">
+        <!--- center
+              start
+              end   -->
+
+              <!-- "row justify-content-center" " row justify-content-between or around" pour modifier horizentalement-->
+
+    <div class="col-4 ">ikram</div> <!-- "align-self-center" pour modifier une collone  -->
+    <div class="col-4">leila</div>
+    <div class="col-4">khadija</div>
+   </div>
+   <div class="alert alert-warning">warning! this is dangerous</div>
+   <button>click</button>
+   <div class="btn btn-success">click</div>
+   <div class="btn btn-outline-primary">click</div><!-- dans div"btn-group" pour faire un group de boutton-->
+                                                   <!-- dans div "btn-toolbar" groupe de groupe-->
+                                                   <!-- "btn-group btn-group-lg or sm or md"-->
+</div>
+<!-- margine "col-8 m-1" OR ml mr mb 
+     col text-center m-1 OR text-right -->
+
+
+    <div class="card w-25">
+        <img src="caftan1.gpj" class="card-img" alt=""> <!--"" card-img-top" mettre l'image en haut-->
+        <div class="card-body"></div>
+        <h1 class="card-title">samsung</h1>
+        <p class="card-text">gyiguhpouijhqasdfghjk</p>
+    </div>
+     <a href="#" class="badge badge-primary"> test</a>
+     <!-- pour faire un slide(carousel)
+          container
+          ol
+          images
+          next
+        -->
+        <div  id="slide" class="carousel slide container">
+            <ol class="carousel-indicators">
+                <li data-target="#slide"data-slide-to="0" class="active"></li><!-- PREMIER IMAGE-->
+                <li data-target="#slide"data-slide-to="1"></li>
+                <li data-target="#slide"data-slide-to="2"></li>
+            </ol>
+        </div>
+            <div class="carousel-inner">
+             <div class="carousel-item active ">
+                <img src="ANNANCE.jpg" alt="" class="w-100">
+             </div>
+             <div class="carousel-item">
+                <img src="CAFTAN3.jpg" alt="" class="w-100">
+             </div>
+             <div class="carousel-item">
+                <img src="mojawhara1.jpg" alt="" class="w-100">
+             </div>
+
+            <a href="#slide" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a><!-- faire flèche next-->
+            <a href="#slide" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+        </div>
+        <!-- faire un dropdown-->
+        <div class="dropdown">
+        <h1>
+            <div class=" badge badge-success dropdown-toggle" id=" X " data-toggle="dropdown">test</div>
+            <div class="dropdown-menu" aria-labelledby="X">
+                <a href="#" class="dropdown-item">test 1</a>
+                <a href="#" class="dropdown-item">test 2</a>
+                <a href="#" class="dropdown-item">test 3</a>
+            </div
+         </h1>
+            
+        </div>
+        <!-- breadcrumb comme une adresse-->
+        <nav>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">home</a></li>
+                <li class="breadcrumb-item"><a href="#">about</a></li>
+                <li class="breadcrumb-item"><a href="#">courses</a></li>
+            </ul>
+            
+        </nav>
+        <!-- si on clique sur le boutton un para apparaitra (collapse)-->
+        <button data-target="#ikram" class="btn btn-primary" data-toggle="collapse">info</button>
+        <h1 id="ikram" class="collapse">DFGHJKLJDEJIHZJHFOFH</h1>
+        <!-- form-->
+        <div class="container w-50 mt-5">
+        <form>
+            <div class="form-group">
+                <label > email</label>
+                <input placeholder="email" class="form-control" type="email">
+                <small class="from-text text-muted">entrez votre email</small><!-- warning-->
+            </div>
+            <div class="form-group">
+                <label>password</label>
+                <input placeholder="password" class="form-control" type="password">
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox">
+            <label class="form-check-label"> check me out</label><!--or class="mb-0"-->
+            </div>
+            <button class="btn btn-primary">submit</button>
+            <select class="form-control">select 
+                <option >1</option>
+                <option >2</option>
+                <option >3</option>
+            </select>
+        </div>
+        <!-- input group-->
+        
+        <div class="input-group">
+            <div class="input-group-prepent">
+                <span class="input-group-text">@</span><!-- transformer en boutton class="input-group-text btn" pour size on ajout ms .. -->
+            </div>
+            
+        <input type="email" class="form-control">
+        </div>
+        
+            
+
+
+
+
+
+
+        </form>
+        <!--jumbotron-->
+        <div class="jumbotron">
+            <h1>ahleeeeen</h1><!--voir bootstrap-->
+        </div>
+        <!--navbar c charit kaykon fo9 la page -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="" class="navbar-brand">google</a><!-- le nom du site lmaw9i3-->
+        <a href="#ok" data-toggle="collapse" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </a>
+    
+        <div id="ok"class="collapse navbar-collapse"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link"> home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> block</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> about</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> test</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!--progressbar-->
+    <div class="progress">
+        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated w-50">50%</div>
+    </div>
+        <!--modal une interface s'ouvre voir bootstrap-->
+        <!--pagination-->
+        <ul class="pagination ">
+            <li class="page-item"><a class="page-link" href=""> prev</a></li>
+            <li class="page-item"><a class="page-link" href=""> 1</a></li>
+            <li class="page-item"><a class="page-link" href=""> 2</a></li>
+            <li class="page-item"><a class="page-link" href=""> 3</a></li>
+            <li class="page-item"><a class="page-link" href=""> next</a></li>
+        </ul>
+
+
+       
+
+
+
+
+    <script src="js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
